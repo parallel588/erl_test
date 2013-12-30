@@ -1,12 +1,13 @@
 {application, erl_test,
  [
-  {description, ""},
+  {description, "Desc"},
   {vsn, "1"},
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  cowboy
                  ]},
   {mod, { erl_test_app, []}},
-  {env, []}
+  {env, [{http_port, 3000}]}
  ]}.

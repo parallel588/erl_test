@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erl Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='styles/bootstrap.css' rel='stylesheet'>
+    <link href='styles/bootstrap-theme.css' rel='stylesheet'>
+
+    <link href='styles/kendo.common.min.css' rel='stylesheet'>
+    <link href='styles/kendo.rtl.min.css' rel='stylesheet'>
+    <link href='styles/kendo.default.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <div class='container'>
+      <nav class='navbar navbar-default' role='navigation'>
+        <p class='navbar-text'>
+          Current user: {{current_user}}
+        </p>
+        <div class='collapse navbar-collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li><a href='/sign_out'>Sign Out</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class='page-header'>
+        <h1>Welcome</h1>
+      </div>
+
+      <div class='k-content'>
+        <div id='grid'>
+
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.js'></script>
+    <script src='js/kendo.web.min.js'></script>
+    <script src='js/users.js'></script>
+  </body>
+</html>

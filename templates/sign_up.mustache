@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erl Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='styles/bootstrap.css' rel='stylesheet'>
+    <link href='styles/bootstrap-theme.css' rel='stylesheet'>
+    <link href='styles/signin.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='container'>
+
+      <form class='form-signin' role='form' action='/sign_up' method='post'>
+        <h2 class='form-signin-heading'>Please sign up</h2>
+        {{#errors}}
+        <div class='alert alert-danger'>{{errormessage}}</div>
+        {{/errors}}
+        <input name='name' type='text' class='form-control' placeholder='Name' required autofocus>
+        <input name='email' type='text' class='form-control' placeholder='Email address' required autofocus>
+        <br />
+        <input name='password' type='password' class='form-control' placeholder='Password' required>
+        <input name='password_confirmation' type='password' class='form-control' placeholder='Password confirmation' required>
+        <br />
+        <button class='btn btn-primary' type='submit'>Sign up</button>
+        <a href='/sign_in' class='btn btn-warning '>Sign In</a>
+      </form>
+
+    </div> <!-- /container -->
+
+    <script src='js/jquery.min.js'></script>
+    <script src='js/bootstrap.js'></script>
+  </body>
+</html>
