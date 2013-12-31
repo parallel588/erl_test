@@ -4,13 +4,18 @@ erl_test
 Erl Test
 
 
-required
-========
+## required
 
-  Erlang R16B03
-  Sqlite3 (dev header)
-  
-run
-===
+* Erlang R16B03
+* Sqlite3 (dev header)
+* Jiff (git://github.com/davisp/jiffy.git)
 
-  make all
+## run
+
+```
+make all
+```
+
+### example
+
+[![screenshot](https://raw.github.com/parallel588/erl_test/master/doc/screenshot_.png)]
